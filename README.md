@@ -1,93 +1,70 @@
-📚 Online Group-Study
-Online Group-Study is a web application designed to facilitate collaborative group study among friends. Users can create, complete, and grade assignments in an interactive environment. The platform enables seamless evaluation of submissions, making learning more engaging and efficient.
 
-<!-- Add an actual screenshot URL here -->
+# Online Group-Study 
+The Online Group-Study Assignment web application facilitates collaborative group study among friends. It allows users to create, complete, and grade assignments within a friendly and interactive environment. All registered users can seamlessly interact and evaluate each other's submissions.
 
-🚀 Live Project
-🔗 Live Demo: Online Group-Study
-📂 Repository: GitHub
 
-📌 Table of Contents
-Technologies Used
-Key Features
-Dependencies
-Installation & Setup
-Live Links
-Contributors
-License
-🛠️ Technologies Used
-Frontend
-React.js
-Tailwind CSS
-Backend
-Node.js
-Express.js
-Database
-MongoDB
-Authentication
-Firebase / Auth0
-Deployment
-Vercel / Netlify
-✨ Key Features
-✅ User Registration & Authentication – Secure sign-up and login functionality.
-✅ Assignment Management – Create, update, and delete assignments with details like title, description, marks, and deadline.
-✅ Grading System – Provide feedback and marks through a grading modal.
-✅ Dark & Light Mode – Toggle between themes for a personalized experience.
-✅ Responsive Design – Optimized for all screen sizes.
+## 🛠️ Technologies Used
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: Firebase/Auth0
+- **Deployment**: Vercel/Netlify 
 
-📦 Dependencies
-Frontend
-@react-icons/all-files
-axios
-firebase
-localforage
-match-sorter
-react
-react-datepicker
-react-dom
-react-hot-toast
-react-icons
-react-router-dom
-react-toastify
-sort-by
-sweetalert2
-swiper
-Backend
-cookie-parser
-cors
-dotenv
-express
-jsonwebtoken
-mongodb
-🛠 Installation & Setup
-Follow these steps to run the project locally:
 
-Clone the repository
+# key features 
+- User Registration and Authentication: Secure user sign-up and login functionality.
+- Users can create assignments with details like title, description, marks, and deadline.
+- Assignments can be updated or deleted by the creator.
+- Feedback and marks can be provided by the grader
+- Grading modal includes submission link, notes, and inputs for marks and feedback.
+- Toggle between light and dark modes for a personalized experience.
+- Responsive Design
 
-sh
-Copy
-Edit
-git clone https://github.com/Rakib010/online-group-study-.git
-cd Online Group-Study
-Install dependencies
+# Dependencies
+## Fronted
+- @react-icons/all-files
+- axios
+- firebase
+- localforage
+- match-sorter
+- react
+- react-datepicker
+- react-dom
+- react-hot-toast
+- react-icons
+- react-router-dom
+- react-toastify
+- sort-by
+- sweetalert2
+- swiper
 
-sh
-Copy
-Edit
-npm install
-Set up environment variables
+## Backhand
+- cookie-parser
+- cors
+- dotenv 
+- express 
+- jsonwebtoken
+- mongodb
 
-Create a .env file and add necessary keys for Firebase, MongoDB, etc.
-Run the development server
+# How to Run Locally
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Rakib010/online-group-study-.git
+   cd Online Group-Study 
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Set up environment variables:**
+   - Create a `.env` file and add necessary keys for Firebase, MongoDB, etc.
+4. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+5. **Open in browser:**
+   - Visit `http://localhost:9000` to explore the project.
 
-sh
-Copy
-Edit
-npm run dev
-Open in browser
-
-Visit http://localhost:9000 to explore the project.
-🔗 Live Links
-🔹 Live Demo: Online Group-Study
-🔹 GitHub Repo: online-group-study
-
+## Live link 
+ - LiveDemo - https://majestic-degree.surge.sh/
+ - GitHub Repo:- https://github.com/Rakib010/online-group-study-.git
