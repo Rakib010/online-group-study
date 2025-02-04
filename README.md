@@ -1,17 +1,17 @@
+# 📚 Online Group-Study
 
-# Online Group-Study 
 The Online Group-Study Assignment web application facilitates collaborative group study among friends. It allows users to create, complete, and grade assignments within a friendly and interactive environment. All registered users can seamlessly interact and evaluate each other's submissions.
 
-
 ## 🛠️ Technologies Used
+
 - **Frontend**: React.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: Firebase/Auth0
-- **Deployment**: Vercel/Netlify 
+- **Deployment**: Vercel/Netlify
 
+# ✨ key features
 
-# key features 
 - User Registration and Authentication: Secure user sign-up and login functionality.
 - Users can create assignments with details like title, description, marks, and deadline.
 - Assignments can be updated or deleted by the creator.
@@ -20,8 +20,8 @@ The Online Group-Study Assignment web application facilitates collaborative grou
 - Toggle between light and dark modes for a personalized experience.
 - Responsive Design
 
-# Dependencies
-## Fronted
+## 📦 Dependencies(Fronted+Backhand)
+
 - @react-icons/all-files
 - axios
 - firebase
@@ -37,20 +37,19 @@ The Online Group-Study Assignment web application facilitates collaborative grou
 - sort-by
 - sweetalert2
 - swiper
-
-## Backhand
 - cookie-parser
 - cors
-- dotenv 
-- express 
+- dotenv
+- express
 - jsonwebtoken
 - mongodb
 
-# How to Run Locally
+# 🛠 How to Run Locally
+
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/Rakib010/online-group-study-.git
-   cd Online Group-Study 
+   cd Online Group-Study
    ```
 2. **Install dependencies:**
    ```sh
@@ -65,6 +64,7 @@ The Online Group-Study Assignment web application facilitates collaborative grou
 5. **Open in browser:**
    - Visit `http://localhost:9000` to explore the project.
 
-## Live link 
- - LiveDemo - https://majestic-degree.surge.sh/
- - GitHub Repo:- https://github.com/Rakib010/online-group-study-.git
+## 🚀 Live Project
+
+- 🔗 LiveDemo - https://majestic-degree.surge.sh/
+- 📂 GitHub Repo:- https://github.com/Rakib010/online-group-study-.git
