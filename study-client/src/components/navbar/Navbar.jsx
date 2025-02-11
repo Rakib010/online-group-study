@@ -5,7 +5,7 @@ const Navbar = () => {
   const { user, handleLogOut } = useAuth();
 
   return (
-    <div className="bg-base-200 shadow-sm border-b-2 ">
+    <div className="fixed top-0 w-full z-50 shadow-sm border-b-2 bg-[#D4BEE4]">
       <div className="navbar w-11/12 px-4 mx-auto">
         <div className="flex-1">
           <Link to="/" className="flex gap-2 items-center">
@@ -95,13 +95,13 @@ const Navbar = () => {
               </ul>
             </div>
           ) : (
-            <Link to="/login" className="btn btn-sm btn-primary hidden ">
+            <Link to="/login" className="btn btn-sm btn-primary hidden">
               Login
             </Link>
           )}
         </div>
 
-        {/* Mobile Menu*/}
+        {/* Mobile Menu */}
         <div className="dropdown dropdown-end lg:hidden">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
             <svg

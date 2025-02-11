@@ -7,64 +7,49 @@ import {
 
 const Features = () => {
   return (
-    <section className="py-12">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-3 text-gray-800 ">
-          Key Features
-        </h2>
-        <p className="text-gray-600 mb-12">
+    <section className="mt-20">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-3 text-gray-800">Key Features</h2>
+        <p className="text-gray-600 mb-8">
           Explore the exciting features that make group study engaging and
           productive.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-white rounded-lg shadow p-6 border">
-            <div className="text-teal-500 text-4xl mb-4">
-              <FaTasks />
+          {[
+            {
+              icon: <FaTasks />,
+              title: "Create Assignments",
+              desc: "Easily create and share assignments with your friends to enhance collaborative learning.",
+            },
+            {
+              icon: <FaUsers />,
+              title: "Connect with Friends",
+              desc: "Every registered user becomes your friend, enabling seamless group collaboration.",
+            },
+            {
+              icon: <FaGraduationCap />,
+              title: "Grade Assignments",
+              desc: "Review and grade your friends’ assignments to help each other improve and grow.",
+            },
+            {
+              icon: <FaChalkboardTeacher />,
+              title: "Free to Use",
+              desc: "Enjoy all features for free and focus on learning without any cost barriers.",
+            },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow p-6 border flex flex-col items-center text-center"
+            >
+              <div className="flex justify-center items-center text-teal-500 text-5xl mb-4">
+                {feature.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600">{feature.desc}</p>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Create Assignments
-            </h3>
-            <p className="text-gray-600">
-              Easily create and share assignments with your friends to enhance
-              collaborative learning.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-6 border">
-            <div className="text-teal-500 text-4xl mb-4">
-              <FaUsers />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Connect with Friends
-            </h3>
-            <p className="text-gray-600">
-              Every registered user becomes your friend, enabling seamless group
-              collaboration.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-6 border">
-            <div className="text-teal-500 text-4xl mb-4">
-              <FaGraduationCap />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Grade Assignments
-            </h3>
-            <p className="text-gray-600">
-              Review and grade your friends’ assignments to help each other
-              improve and grow.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg shadow p-6 border">
-            <div className="text-teal-500 text-4xl mb-4">
-              <FaChalkboardTeacher />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Free to Use
-            </h3>
-            <p className="text-gray-600">
-              Enjoy all features for free and focus on learning without any cost
-              barriers.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

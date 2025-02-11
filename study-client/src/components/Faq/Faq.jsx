@@ -2,8 +2,8 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <section className="py-12 bg-gray-100 rounded-lg">
-      <div className="container mx-auto px-4">
+    <section className="rounded-lg">
+      <div className="container mx-auto">
         {/* Section Heading */}
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
           Frequently Asked Questions
@@ -12,7 +12,7 @@ const Faq = () => {
         {/* FAQ Items */}
         <div className="space-y-4">
           {/* FAQ 1 */}
-          <div className="collapse collapse-plus bg-white rounded-lg shadow">
+          <div className="collapse collapse-plus  bg-gray-50 rounded-lg shadow">
             <input type="radio" name="faq-accordion" defaultChecked />
             <div className="collapse-title text-lg font-medium text-gray-800">
               Q: How do I create an assignment?
@@ -26,7 +26,7 @@ const Faq = () => {
           </div>
 
           {/* FAQ 2 */}
-          <div className="collapse collapse-plus bg-white rounded-lg shadow">
+          <div className="collapse collapse-plus  bg-gray-50 rounded-lg shadow">
             <input type="radio" name="faq-accordion" />
             <div className="collapse-title text-lg font-medium text-gray-800">
               Q: Can I grade my friends' assignments?
@@ -40,7 +40,7 @@ const Faq = () => {
           </div>
 
           {/* FAQ 3 */}
-          <div className="collapse collapse-plus bg-white rounded-lg shadow">
+          <div className="collapse collapse-plus  bg-gray-50 rounded-lg shadow">
             <input type="radio" name="faq-accordion" />
             <div className="collapse-title text-lg font-medium text-gray-800">
               Q: How do I join a study group?
@@ -54,7 +54,7 @@ const Faq = () => {
           </div>
 
           {/* FAQ 4 */}
-          <div className="collapse collapse-plus bg-white rounded-lg shadow">
+          <div className="collapse collapse-plus bg-gray-50 rounded-lg shadow">
             <input type="radio" name="faq-accordion" />
             <div className="collapse-title text-lg font-medium text-gray-800">
               Q: Is this platform free to use?

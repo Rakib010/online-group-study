@@ -3,8 +3,8 @@ import { FaTwitter, FaYoutube, FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-gray-100 text-gray-700 mt-20">
-      <footer className="footer footer-center p-10">
-        <p className="mt-2 text-xl font-bold">
+      <footer className="footer footer-center p-8">
+        <p className="text-xl font-bold">
           Empowering students to collaborate, share knowledge, and grow
           together.
         </p>
@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </nav>
         <nav>
-          <div className="flex justify-center gap-8 mt-2 text-2xl">
+          <div className="flex justify-center gap-8  text-2xl">
             <a
               href="#"
               aria-label="Twitter"
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </nav>
 
-        <aside className="mt-2 text-sm">
+        <aside className="text-sm">
           <p>
             © {new Date().getFullYear()} Online Group Study. All Rights
             Reserved.{" "}

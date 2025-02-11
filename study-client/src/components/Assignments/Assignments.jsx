@@ -30,7 +30,7 @@ const Assignments = () => {
   // console.log(filter);
 
   return (
-    <div className="p-6 bg-gradient-to-b from-indigo-50 to-indigo-100 min-h-screen">
+    <div className="mt-20 w-11/12 mx-auto bg-gradient-to-b from-indigo-50 to-indigo-100 min-h-screen p-4 rounded-lg">
       {/* Filter & Search */}
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6 p-4 bg-white rounded-lg shadow-md">
         {/* Filter by Level */}
@@ -68,7 +68,7 @@ const Assignments = () => {
               placeholder="Search assignments..."
               className="border border-gray-300 text-gray-600 bg-gray-50 rounded-l-lg px-4 py-2 w-full md:w-64 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
             />
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-r-lg flex items-center gap-2 hover:bg-blue-700 transition">
+            <button className="bg-teal-500 text-white px-4 py-2 rounded-r-lg flex items-center gap-2 hover:bg-teal-700 transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"

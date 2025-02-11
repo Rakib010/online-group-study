@@ -16,7 +16,7 @@ import ph3 from "../../assets/photo3.avif";
 
 export default function Banner() {
   return (
-    <div className="container px-6 py-10 mx-auto ">
+    <div className="container mx-auto mt-8 ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
