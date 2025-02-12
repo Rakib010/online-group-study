@@ -4,7 +4,7 @@ const MyAssignmentTable = ({ index, mySubmission }) => {
   const { title, status, marks, feedback, mark } = mySubmission;
 
   return (
-    <tr className="border-b">
+    <tr className="border-b text-gray-600">
       <td className="py-4 px-6">{index}</td>
       <td className="py-4 px-6">{title}</td>
       <td className="py-4 px-6">{status}</td>

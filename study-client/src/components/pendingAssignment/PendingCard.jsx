@@ -39,7 +39,7 @@ const PendingCard = ({ assignment, index }) => {
   };
 
   return (
-    <tr className="border-b hover:bg-gray-100 transition-colors duration-200">
+    <tr className="border-b hover:bg-gray-100 transition-colors duration-200 text-gray-500">
       <td className="py-4 px-6">{index + 1}</td>
       <td className="py-4 px-6">{title}</td>
       <td className="py-4 px-6">{marks}</td>

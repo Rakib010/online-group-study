@@ -22,7 +22,7 @@ const Blog = () => {
           {blogPosts.map((post) => (
             <div
               key={post.id}
-              className="bg-white p-5 border rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="bg-white p-5 border rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-gray-500"
             >
               <img
                 src={post.image}

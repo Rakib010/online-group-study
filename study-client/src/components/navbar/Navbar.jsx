@@ -74,7 +74,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/createAssignment"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 text-gray-600"
                   >
                     Create Assignments
                   </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     to="/myAssignments"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block px-4 py-2 hover:bg-gray-100 text-gray-600"
                   >
                     My Assignments
                   </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={handleLogOut}
-                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-gray-600"
                   >
                     Logout
                   </button>
