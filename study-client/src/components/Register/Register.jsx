@@ -70,7 +70,7 @@ const Register = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-10">
         <div className="bg-base-100 w-full max-w-lg  border p-5 my-8 rounded-lg ">
           <h2 className="text-2xl font-semibold text-center">
             Register your account
@@ -135,13 +135,16 @@ const Register = () => {
             </div>
 
             <div className="form-control mt-6">
-              <button type="submit" className="btn btn-success rounded-none">
+              <button
+                type="submit"
+                className="btn bg-teal-600 hover:bg-teal-700 rounded-lg  text-white font-semibold"
+              >
                 Register
               </button>
             </div>
           </form>
           {/* google login */}
-          <div className="flex items-center justify-center mt-4">
+          <div className="flex items-center justify-center ">
             <button
               onClick={handleGoogle}
               className="btn btn-outline flex items-center gap-2"

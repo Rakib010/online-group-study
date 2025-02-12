@@ -16,8 +16,8 @@ const PendingAssignment = () => {
   };
 
   return (
-    <div className="container mx-auto my-8 px-4">
-      <h2 className="text-3xl font-bold text-center mb-4 text-gradient bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">
+    <div className="container mx-auto mt-20">
+      <h2 className="text-3xl font-bold text-center mb-4 ">
         Pending Assignments
       </h2>
       <p className="text-center text-gray-500 mb-6">
@@ -25,7 +25,7 @@ const PendingAssignment = () => {
       </p>
       <div className="overflow-hidden rounded-lg shadow-lg bg-white">
         <table className="w-full text-sm md:text-base table-auto border-collapse">
-          <thead className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
+          <thead className="bg-[#D4BEE4] text-black">
             <tr>
               <th className="py-4 px-6 text-left">#</th>
               <th className="py-4 px-6 text-left">Title</th>

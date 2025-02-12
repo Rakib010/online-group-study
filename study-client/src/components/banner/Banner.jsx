@@ -16,7 +16,7 @@ import ph3 from "../../assets/photo3.avif";
 
 export default function Banner() {
   return (
-    <div className="container mx-auto mt-8 ">
+    <div className="container mx-auto mt-18 ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

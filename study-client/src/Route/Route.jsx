@@ -11,6 +11,8 @@ import DetailsAssignment from "../components/detailsAssignment/DetailsAssignment
 import MyAssignment from "../components/myAssignment/MyAssignment";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import PendingAssignment from "../components/pendingAssignment/PendingAssignment";
+import Blog from "../components/Blog/Blog";
+import Contact from "../components/contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,22 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/blog",
+        element: (
+          <PrivateRoute>
+            <Blog />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/contact",
+        element: (
+          <PrivateRoute>
+            <Contact/>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/createAssignment",

@@ -47,7 +47,7 @@ const PendingCard = ({ assignment, index }) => {
       <td className="py-4 px-6">
         <button
           onClick={() => document.getElementById(_id).showModal()}
-          className="px-4 py-2 bg-gradient-to-r from-blue-500 to-teal-400 text-white rounded-lg "
+          className="px-4 py-2 bg-teal-600 text-white rounded-lg "
           disabled={user?.email === email} 
         >
           {user?.email === email ? "Cannot Mark" : "Give Mark"}
@@ -66,7 +66,7 @@ const PendingCard = ({ assignment, index }) => {
               <button
                 type="button"
                 onClick={() => window.open(googleDocsLink, "_blank")}
-                className="underline text-blue-500 hover:text-blue-700"
+                className="underline text-teal-500 hover:text-teal-700"
               >
                 Open Google Docs
               </button>

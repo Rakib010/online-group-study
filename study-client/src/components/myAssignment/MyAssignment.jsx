@@ -29,7 +29,7 @@ const MyAssignment = () => {
   }
 
   return (
-    <div className="container mx-auto my-8 px-4">
+    <div className="container mx-auto mt-20">
       <h2 className="text-3xl font-bold  text-center mb-4 ">
         My Assignments
       </h2>
@@ -38,7 +38,7 @@ const MyAssignment = () => {
       </p>
       <div className="overflow-hidden rounded-lg shadow-lg bg-white">
         <table className="w-full text-sm md:text-base table-auto border-collapse border">
-          <thead className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
+          <thead className="bg-[#D4BEE4] text-black">
             <tr>
               <th className="py-4 px-6 text-left">#</th>
               <th className="py-4 px-6 text-left">Title</th>

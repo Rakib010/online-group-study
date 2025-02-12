@@ -30,7 +30,7 @@ const Assignments = () => {
   // console.log(filter);
 
   return (
-    <div className="mt-20 w-11/12 mx-auto bg-gradient-to-b from-indigo-50 to-indigo-100 min-h-screen p-4 rounded-lg">
+    <div className="mt-20 bg-gradient-to-b from-indigo-50 to-indigo-100 min-h-screen p-4 rounded-lg">
       {/* Filter & Search */}
       <div className="flex flex-wrap items-center justify-between gap-4 mb-6 p-4 bg-white rounded-lg shadow-md">
         {/* Filter by Level */}

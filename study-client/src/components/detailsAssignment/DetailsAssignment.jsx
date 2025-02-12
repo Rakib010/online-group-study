@@ -44,7 +44,7 @@ const DetailsAssignment = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10 border">
+    <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg border mt-20 p-6">
       <div className="mb-6 text-center">
         <h1 className="text-3xl font-bold text-gray-800">{title}</h1>
         <p className="text-gray-600 italic text-sm mt-1">
@@ -75,7 +75,7 @@ const DetailsAssignment = () => {
       <div className="mt-6 text-center">
         <button
           onClick={() => document.getElementById("my_modal_5").showModal()}
-          className="px-6 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 font-medium"
+          className="px-6 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 font-medium"
         >
           Take Assignment
         </button>
@@ -97,7 +97,7 @@ const DetailsAssignment = () => {
                 name="googleDocsLink"
                 required
                 placeholder="Enter Google Docs link"
-                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50 focus:outline-none"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-purple-300 rounded-md focus:border-purple-400 focus:ring focus:ring-purple-300 focus:ring-opacity-50 focus:outline-none"
               />
             </div>
             {/* Quick Note */}
@@ -113,7 +113,7 @@ const DetailsAssignment = () => {
                 name="quickNote"
                 rows="5"
                 placeholder="Enter a quick note"
-                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50 focus:outline-none"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-purple-300 rounded-md focus:border-purple-400 focus:ring focus:ring-purple-300 focus:ring-opacity-50 focus:outline-none"
               ></textarea>
             </div>
             {/* submit btn */}

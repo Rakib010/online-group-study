@@ -49,7 +49,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-10">
         <div className="w-full max-w-lg shrink-0 rounded-none border p-4 my-10 ">
           <h2 className="text-2xl font-semibold text-center">
             Login to Your Account
@@ -88,7 +88,7 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button type="submit" className="btn btn-success  rounded-none">
+              <button type="submit" className="btn bg-teal-600 hover:bg-teal-700 rounded-lg  text-white font-semibold">
                 Login
               </button>
             </div>

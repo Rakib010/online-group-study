@@ -75,7 +75,7 @@ const CreateAssignment = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10 border">
+    <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg my-10 border mt-20">
       <h1 className="text-2xl font-bold text-gray-800 mb-6">
         Create Assignment
       </h1>
@@ -154,7 +154,7 @@ const CreateAssignment = () => {
         </div>
         <button
           type="submit"
-          className="w-full px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 font-medium"
+          className="w-full px-4 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 font-medium"
         >
           Create Assignment
         </button>

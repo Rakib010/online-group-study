@@ -1,93 +1,94 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const { user, handleLogOut } = useAuth();
 
   return (
-    <div className="fixed top-0 w-full z-50 shadow-sm border-b-2 bg-[#D4BEE4]">
-      <div className="navbar w-11/12 px-4 mx-auto">
-        <div className="flex-1">
-          <Link to="/" className="flex gap-2 items-center">
-            <span className="font-bold text-xl">Group Study</span>
-          </Link>
-        </div>
+    <nav className="fixed top-0 w-full z-50 shadow-md bg-[#D4BEE4]">
+      <div className="w-11/12 mx-auto flex justify-between items-center py-3">
+        {/* Logo */}
+        <Link to="/" className="text-xl font-bold">
+          Group Study
+        </Link>
 
-        {/* Navigation Links */}
-        <div className="flex-none hidden lg:flex justify-center">
-          <ul className="menu menu-horizontal px-1 gap-4">
-            <li>
-              <Link
-                to="/"
-                className="font-medium hover:text-teal-500 transition"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/assignments"
-                className="font-medium hover:text-teal-500 transition"
-              >
-                Assignments
-              </Link>
-            </li>
-            {user && (
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex space-x-6 font-medium">
+          <li>
+            <Link to="/" className="hover:text-teal-500 transition">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/assignments" className="hover:text-teal-500 transition">
+              Assignments
+            </Link>
+          </li>
+          {user && (
+            <>
+              <li>
+                <Link to="/blog" className="hover:text-teal-500 transition">
+                  Blog
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/pendingAssignment"
-                  className="font-medium hover:text-teal-500 transition"
+                  className="hover:text-teal-500 transition"
                 >
                   Pending Assignments
                 </Link>
               </li>
-            )}
-            {!user && (
               <li>
-                <Link
-                  to="/login"
-                  className="font-medium hover:text-teal-500 transition"
-                >
-                  Login
+                <Link to="/contact" className="hover:text-teal-500 transition">
+                  Contact
                 </Link>
               </li>
-            )}
-          </ul>
-        </div>
+            </>
+          )}
+          {!user && (
+            <li>
+              <Link to="/login" className="hover:text-teal-500 transition">
+                Login
+              </Link>
+            </li>
+          )}
+        </ul>
 
-        {/* User Dropdown */}
-        <div className="flex-none">
+        {/* User Profile & Logout */}
+        <div className="flex items-center space-x-4">
           {user ? (
-            <div className="dropdown dropdown-end z-50">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost btn-circle avatar"
-              >
-                <div title={user?.displayName} className="w-10 rounded-full">
-                  <img
-                    referrerPolicy="no-referrer"
-                    alt="User Profile Photo"
-                    src={user?.photoURL}
-                  />
-                </div>
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
+            <div className="relative group">
+              <button className="flex items-center">
+                <img
+                  title={user?.displayName}
+                  src={user?.photoURL}
+                  alt="User Profile"
+                  className="w-10 h-10 rounded-full"
+                />
+              </button>
+              <ul className="absolute hidden group-hover:block right-0 mt-2 w-48 bg-white shadow-md rounded-lg">
                 <li>
-                  <Link to="/createAssignment" className="justify-between">
+                  <Link
+                    to="/createAssignment"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
                     Create Assignments
                   </Link>
                 </li>
                 <li>
-                  <Link to="/myAssignments">My Assignments</Link>
+                  <Link
+                    to="/myAssignments"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    My Assignments
+                  </Link>
                 </li>
-                <li className="mt-2">
+                <li>
                   <button
                     onClick={handleLogOut}
-                    className="bg-gray-200 block text-center"
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
                   >
                     Logout
                   </button>
@@ -99,64 +100,57 @@ const Navbar = () => {
               Login
             </Link>
           )}
-        </div>
 
-        {/* Mobile Menu */}
-        <div className="dropdown dropdown-end lg:hidden">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 ml-12 z-50 shadow bg-base-100 rounded-box"
-          >
-            <li>
-              <Link to="/" className="font-medium hover:text-teal-500">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/assignments"
-                className="font-medium hover:text-teal-500"
-              >
-                Assignments
-              </Link>
-            </li>
-            {user && (
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
+            <label htmlFor="mobile-menu" className="cursor-pointer">
+              <FaBars className="text-xl" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <input type="checkbox" id="mobile-menu" className="hidden peer" />
+      <div className="hidden peer-checked:block absolute top-16 left-0 w-full bg-white shadow-md lg:hidden">
+        <ul className="flex flex-col space-y-2 p-4 font-medium">
+          <li>
+            <Link to="/" className="hover:text-teal-500 transition">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/assignments" className="hover:text-teal-500 transition">
+              Assignments
+            </Link>
+          </li>
+          {user && (
+            <>
               <li>
                 <Link
                   to="/pendingAssignment"
-                  className="font-medium hover:text-teal-500"
+                  className="hover:text-teal-500 transition"
                 >
                   Pending Assignments
                 </Link>
               </li>
-            )}
-            {!user && (
               <li>
-                <Link to="/login" className="font-medium hover:text-teal-500">
-                  Login
+                <Link to="/contact" className="hover:text-teal-500 transition">
+                  Contact
                 </Link>
               </li>
-            )}
-          </ul>
-        </div>
+            </>
+          )}
+          {!user && (
+            <li>
+              <Link to="/login" className="hover:text-teal-500 transition">
+                Login
+              </Link>
+            </li>
+          )}
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 
