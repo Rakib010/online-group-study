@@ -5,7 +5,7 @@ const Faq = () => {
     <section className="rounded-lg">
       <div className="container mx-auto mt-20">
         {/* Section Heading */}
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-8 ">
           Frequently Asked Questions
         </h2>
 

@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         path: "/contact",
         element: (
           <PrivateRoute>
-            <Contact/>
+            <Contact />
           </PrivateRoute>
         ),
       },
@@ -62,7 +62,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateAssignments/:id",
-        element: <UpdateAssignments />,
+        element: (
+          <PrivateRoute>
+            <UpdateAssignments />
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`${import.meta.env.VITE_API_URL}/allAssignment/${params.id}`),
       },

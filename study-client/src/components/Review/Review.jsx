@@ -45,7 +45,7 @@ const getStars = (rating) => {
 const Review = () => {
   return (
     <div className="bg-gray-100 p-8 mt-20 rounded-lg">
-      <h2 className="text-3xl font-bold text-center mb-8">
+      <h2 className="text-3xl text-gray-600 font-bold text-center mb-8">
         What Our Users Say
       </h2>
       <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6">
@@ -61,7 +61,7 @@ const Review = () => {
                 className="w-12 h-12 rounded-full border border-gray-300"
               />
               <div>
-                <h3 className="text-lg font-semibold">{name}</h3>
+                <h3 className="text-lg text-gray-600 font-semibold">{name}</h3>
                 <div className="flex">{getStars(rating)}</div>
               </div>
             </div>

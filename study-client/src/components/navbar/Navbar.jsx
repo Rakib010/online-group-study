@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import { FaBars } from "react-icons/fa";
+import ToggleTheme from "../Toggle/Toggle";
 
 const Navbar = () => {
   const { user, handleLogOut } = useAuth();
@@ -55,6 +56,7 @@ const Navbar = () => {
             </li>
           )}
         </ul>
+        <ToggleTheme />
 
         {/* User Profile & Logout */}
         <div className="flex items-center space-x-4">

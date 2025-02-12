@@ -9,8 +9,8 @@ const Features = () => {
   return (
     <section className="mt-20">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-3 text-gray-800">Key Features</h2>
-        <p className="text-gray-600 mb-8">
+        <h2 className="text-3xl font-bold mb-3">Key Features</h2>
+        <p className="mb-8">
           Explore the exciting features that make group study engaging and
           productive.
         </p>
