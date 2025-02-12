@@ -66,5 +66,5 @@ The Online Group-Study Assignment web application facilitates collaborative grou
 
 ## 🚀 Live Project
 
-- 🔗 LiveDemo - https://majestic-degree.surge.sh/
+- 🔗 LiveDemo - https://ten-metal.surge.sh
 - 📂 GitHub Repo:- https://github.com/Rakib010/online-group-study-.git
