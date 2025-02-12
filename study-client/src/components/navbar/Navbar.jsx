@@ -56,10 +56,10 @@ const Navbar = () => {
             </li>
           )}
         </ul>
-        <ToggleTheme />
 
-        {/* User Profile & Logout */}
+        {/* User Profile & Logout & Theme Toggle */}
         <div className="flex items-center space-x-4">
+          <ToggleTheme />
           {user ? (
             <div className="relative group">
               <button className="flex items-center">
