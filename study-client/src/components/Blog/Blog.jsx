@@ -7,7 +7,7 @@ const Blog = () => {
     fetch("/blog.json") 
       .then((res) => res.json())
       .then((data) => setBlogPosts(data))
-      .catch((error) => console.error("Error fetching blogs:", error)); 
+    
   }, []);
 
   return (
