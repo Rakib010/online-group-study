@@ -7,7 +7,7 @@ const Navbar = () => {
   const { user, handleLogOut } = useAuth();
 
   return (
-    <nav className="fixed top-0 w-full z-50 shadow-md bg-[#D4BEE4]">
+    <nav className="fixed top-0 w-full z-50 shadow-md bg-[#d4bee4] text-gray-900">
       <div className="w-11/12 mx-auto flex justify-between items-center py-3">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold">
