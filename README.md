@@ -8,7 +8,7 @@ The Online Group-Study Assignment web application facilitates collaborative grou
 - **Authentication**: Firebase/Auth0
 - **Deployment**: Vercel/Netlify
 
-# ✨ key features
+### ✨ key features
 - User Registration and Authentication: Secure user sign-up and login functionality.
 - Users can create assignments with details like title, description, marks, and deadline.
 - Assignments can be updated or deleted by the creator.
